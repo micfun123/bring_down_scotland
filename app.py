@@ -144,6 +144,24 @@ def api_refresh():
     })
 
 
+@app.route('/game')
+def game():
+    """
+    Kettle Game - See when Scotland blacks out from kettle usage
+    """
+    data = get_capacity_data()
+    
+    # Get current capacity
+    available_capacity = data['summary']['connected_capacity']
+    
+    # Calculate baseline info
+    kettle_power = 3.0  # kW per kettle
+    kettles_to_blackout = math.ceil((available_capacity * 1000) / kettle_power)  # Convert MW to kW
+    
+    return render_template('game.html', 
+                         available_capacity=available_capacity,
+                         kettle_power=kettle_power,
+                         kettles_to_blackout=kettles_to_blackout)
 
 @app.route('/api/game/calculate', methods=['POST'])
 def calculate_blackout():
