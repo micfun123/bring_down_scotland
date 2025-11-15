@@ -3,6 +3,7 @@ import json
 import os
 from datetime import datetime
 from sse_analyzer import SSEScotlandCapacityAnalyzer
+import math
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'AHHHHHHHHHHHHHHHHHHHHHHHHHHHh'
@@ -140,6 +141,50 @@ def api_refresh():
         'status': 'success',
         'message': 'Data refreshed successfully',
         'data': data
+    })
+
+
+
+@app.route('/api/game/calculate', methods=['POST'])
+def calculate_blackout():
+    """
+    API endpoint to calculate blackout scenario
+    """
+    data = request.json
+    kettle_count = data.get('kettle_count', 0)
+    
+    game_data = get_capacity_data()
+    available_capacity = game_data['summary']['connected_capacity']
+    
+    # Game calculations
+    kettle_power = 3.0  # kW per kettle
+    total_kettle_power = (kettle_count * kettle_power) / 1000  # Convert to MW
+    remaining_capacity = available_capacity - total_kettle_power
+    blackout_percentage = min(100, max(0, (total_kettle_power / available_capacity) * 100))
+    
+    # Determine status
+    if remaining_capacity <= 0:
+        status = "blackout"
+        message = "🏴󠁧󠁢󠁳󠁣󠁴󠁿 BLACKOUT! Scotland's grid has collapsed!"
+    elif blackout_percentage > 90:
+        status = "critical"
+        message = "🔴 CRITICAL! Grid stability at risk!"
+    elif blackout_percentage > 70:
+        status = "warning"
+        message = "🟡 WARNING! Grid under heavy strain!"
+    else:
+        status = "normal"
+        message = "🟢 Grid operating normally"
+    
+    return jsonify({
+        'kettle_count': kettle_count,
+        'available_capacity': available_capacity,
+        'kettle_power_mw': total_kettle_power,
+        'remaining_capacity': max(0, remaining_capacity),
+        'blackout_percentage': blackout_percentage,
+        'status': status,
+        'message': message,
+        'kettles_to_blackout': math.ceil((available_capacity * 1000) / kettle_power)
     })
 
 @app.errorhandler(404)
