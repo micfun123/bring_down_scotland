@@ -1,0 +1,41 @@
+{
+  "totals": {
+    "accepted_registered_capacity": {
+      "total_mw": 4.641,
+      "count_records": 21,
+      "average_mw": 0.221,
+      "min_mw": 0.008,
+      "max_mw": 0.7
+    },
+    "connected_registered_capacity": {
+      "total_mw": 457.38984999999997,
+      "count_records": 1143,
+      "average_mw": 0.4001660979877515,
+      "min_mw": 0.05035,
+      "max_mw": 0.9994
+    },
+    "maximum_export_capacity": {
+      "total_mw": 454.84695,
+      "count_records": 1132,
+      "average_mw": 0.4018082597173145,
+      "min_mw": 0.05035,
+      "max_mw": 0.9994
+    },
+    "maximum_import_capacity": {
+      "total_mw": 28.6541,
+      "count_records": 561,
+      "average_mw": 0.051076827094474156,
+      "min_mw": 0.0,
+      "max_mw": 11.4
+    }
+  },
+  "records_count": 1164,
+  "last_updated": "2025-11-15 12:21:19",
+  "summary": {
+    "accepted_capacity": 4.641,
+    "connected_capacity": 457.38984999999997,
+    "max_export_capacity": 454.84695,
+    "max_import_capacity": 28.6541,
+    "grand_total": 945.5319
+  }
+}

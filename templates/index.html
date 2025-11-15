@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1><i class="fas fa-chart-bar"></i> Scotland Energy Capacity Dashboard</h1>
+            <button class="btn btn-success" onclick="refreshData()">
+                <i class="fas fa-sync-alt"></i> Refresh Data
+            </button>
+        </div>
+        
+        {% if refreshed %}
+        <div class="alert alert-success">
+            <i class="fas fa-check-circle"></i> Data refreshed successfully!
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Summary Cards -->
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card text-white bg-primary">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">{{ data.accepted_capacity }} MW</h4>
+                        <p class="card-text">Accepted Registered Capacity</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-plug fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3">
+        <div class="card text-white bg-success">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">{{ data.connected_capacity }} MW</h4>
+                        <p class="card-text">Connected Registered Capacity</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-bolt fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3">
+        <div class="card text-white bg-warning">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">{{ data.max_export_capacity }} MW</h4>
+                        <p class="card-text">Maximum Export Capacity</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-upload fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3">
+        <div class="card text-white bg-info">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">{{ data.max_import_capacity }} MW</h4>
+                        <p class="card-text">Maximum Import Capacity</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-download fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Grand Total and Stats -->
+<div class="row">
+    <div class="col-md-6">
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <h3 class="text-primary">Total Capacity</h3>
+                <h1 class="display-4 text-success">{{ data.grand_total }} MW</h1>
+                <p class="text-muted">Combined capacity across all categories</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h4><i class="fas fa-database"></i> Data Statistics</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Records Analyzed:</span>
+                        <strong>{{ data.records_count }}</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Last Updated:</span>
+                        <strong>{{ data.last_updated }}</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Data Source:</span>
+                        <strong>SSE API</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Actions -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h5><i class="fas fa-rocket"></i> Quick Actions</h5>
+                <div class="btn-group" role="group">
+                    <a href="{{ url_for('details') }}" class="btn btn-outline-primary">
+                        <i class="fas fa-chart-line"></i> View Detailed Analysis
+                    </a>
+                    <a href="{{ url_for('api_data') }}" class="btn btn-outline-secondary" target="_blank">
+                        <i class="fas fa-code"></i> API Data
+                    </a>
+                    <button class="btn btn-outline-success" onclick="refreshData()">
+                        <i class="fas fa-sync-alt"></i> Refresh Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

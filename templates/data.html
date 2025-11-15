@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}Detailed Analysis - Scotland Energy Capacity{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1><i class="fas fa-chart-line"></i> Detailed Capacity Analysis</h1>
+        <p class="lead">Comprehensive breakdown of Scotland's energy capacity data</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4><i class="fas fa-table"></i> Capacity Breakdown</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Capacity Type</th>
+                                <th>Total (MW)</th>
+                                <th>Records</th>
+                                <th>Average (MW)</th>
+                                <th>Min (MW)</th>
+                                <th>Max (MW)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for cap_name, cap_data in data.totals.items() %}
+                            <tr>
+                                <td>{{ cap_name.replace('_', ' ').title() }}</td>
+                                <td><strong>{{ "%.2f"|format(cap_data.total_mw) }}</strong></td>
+                                <td>{{ cap_data.count_records }}</td>
+                                <td>{{ "%.2f"|format(cap_data.average_mw) }}</td>
+                                <td>{{ "%.2f"|format(cap_data.min_mw) }}</td>
+                                <td>{{ "%.2f"|format(cap_data.max_mw) }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h5><i class="fas fa-info-circle"></i> Data Information</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <strong>Total Records:</strong> {{ data.records_count }}
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Last Updated:</strong> {{ data.last_updated }}
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Grand Total Capacity:</strong> {{ "%.2f"|format(data.summary.grand_total) }} MW
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h5><i class="fas fa-tools"></i> Actions</h5>
+                <div class="d-grid gap-2">
+                    <a href="{{ url_for('index') }}" class="btn btn-primary">
+                        <i class="fas fa-arrow-left"></i> Back to Dashboard
+                    </a>
+                    <a href="{{ url_for('refresh_data') }}" class="btn btn-success">
+                        <i class="fas fa-sync-alt"></i> Refresh Data
+                    </a>
+                    <a href="{{ url_for('api_data') }}" class="btn btn-outline-secondary" target="_blank">
+                        <i class="fas fa-code"></i> View Raw API Data
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
