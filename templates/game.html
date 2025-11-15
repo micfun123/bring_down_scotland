@@ -1,1 +1,308 @@
-{{ data }}
+{% extends "base.html" %}
+
+{% block title %}Kettle Blackout Game - Scotland Energy{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12 text-center">
+        <h1 class="display-4">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Kettle Blackout Game</h1>
+        <p class="lead">How many kettles does it take to black out Scotland?</p>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-8 mx-auto">
+        <div class="card">
+            <div class="card-body text-center">
+                <h3>Scotland's Available Capacity: <span class="text-primary">{{ "%.2f"|format(available_capacity) }} MW</span></h3>
+                <p class="text-muted">Each kettle uses {{ kettle_power }} kW of power</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h4>Kettles to Blackout</h4>
+                                <h2 class="text-danger">{{ "{:,}".format(kettles_to_blackout) }}</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h4>Current Kettles</h4>
+                                <h2 id="currentKettles">0</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Game Controls -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body text-center">
+                <h4>Add Kettles</h4>
+                <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-outline-primary" onclick="addKettles(1)">
+                        +1 Kettle
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" onclick="addKettles(10)">
+                        +10 Kettles
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" onclick="addKettles(100)">
+                        +100 Kettles
+                    </button>
+                    <button type="button" class="btn btn-outline-warning" onclick="addKettles(1000)">
+                        +1,000 Kettles
+                    </button>
+                    <button type="button" class="btn btn-outline-danger" onclick="addKettles(10000)">
+                        +10,000 Kettles
+                    </button>
+                </div>
+                <div class="mt-3">
+                    <button type="button" class="btn btn-success" onclick="addKettles(100000)">
+                        +100,000 Kettles 🚀
+                    </button>
+                    <button type="button" class="btn btn-secondary" onclick="resetGame()">
+                        Reset Game
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Status Display -->
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body text-center">
+                <div id="statusMessage" class="alert alert-info">
+                    <h4>🟢 Grid Operating Normally</h4>
+                    <p>Start adding kettles to see the impact on Scotland's grid!</p>
+                </div>
+                
+                <!-- Progress Bar -->
+                <div class="progress mb-3" style="height: 30px;">
+                    <div id="capacityBar" class="progress-bar progress-bar-striped progress-bar-animated" 
+                         role="progressbar" style="width: 0%">
+                        <span id="progressText">0% Capacity Used</span>
+                    </div>
+                </div>
+                
+                <!-- Stats -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6>Kettle Power</h6>
+                                <h5 id="kettlePower">0 MW</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6>Remaining Capacity</h6>
+                                <h5 id="remainingCapacity">{{ "%.2f"|format(available_capacity) }} MW</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6>Capacity Used</h6>
+                                <h5 id="capacityUsed">0%</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6>Grid Status</h6>
+                                <h5 id="gridStatus">Normal</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Fun Facts -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4>⚡ Fun Facts</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <strong>Tea Time:</strong> During peak times, kettle usage can account for up to 30% of UK electricity demand
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Scottish Homes:</strong> There are approximately 2.5 million households in Scotland
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Kettle Power:</strong> A typical kettle uses 3kW - similar to 150 LED light bulbs
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <strong>Boiling Time:</strong> It takes about 2-3 minutes to boil a kettle
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Simultaneous Use:</strong> If everyone in Scotland boiled a kettle at once, it would require about 7,500 MW
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Real Impact:</strong> Major TV events like football matches can cause "TV pickup" demand spikes
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Share Results -->
+<div class="row mt-4">
+    <div class="col-12 text-center">
+        <div class="card bg-light">
+            <div class="card-body">
+                <h5>Share Your Results</h5>
+                <p>How many kettles did it take to black out Scotland?</p>
+                <button class="btn btn-outline-primary" onclick="shareResults()">
+                    <i class="fas fa-share"></i> Share on Social Media
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+let currentKettles = 0;
+
+function addKettles(count) {
+    console.log('Adding', count, 'kettles');
+    currentKettles += count;
+    updateGame();
+}
+
+function resetGame() {
+    console.log('Resetting game');
+    currentKettles = 0;
+    updateGame();
+}
+
+function updateGame() {
+    console.log('Updating game with', currentKettles, 'kettles');
+    document.getElementById('currentKettles').textContent = currentKettles.toLocaleString();
+    
+    fetch('/api/game/calculate', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({kettle_count: currentKettles})
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Received data:', data);
+        updateDisplay(data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Error updating game: ' + error.message);
+    });
+}
+
+function updateDisplay(data) {
+    console.log('Updating display with:', data);
+    
+    // Update progress bar
+    const progressBar = document.getElementById('capacityBar');
+    const progressText = document.getElementById('progressText');
+    progressBar.style.width = data.blackout_percentage + '%';
+    progressText.textContent = data.blackout_percentage.toFixed(1) + '% Capacity Used';
+    
+    // Update status message
+    const statusMessage = document.getElementById('statusMessage');
+    statusMessage.innerHTML = `<h4>${data.message}</h4>`;
+    
+    // Update status colors
+    switch(data.status) {
+        case 'blackout':
+            statusMessage.className = 'alert alert-danger';
+            progressBar.className = 'progress-bar progress-bar-striped progress-bar-animated bg-danger';
+            break;
+        case 'critical':
+            statusMessage.className = 'alert alert-danger';
+            progressBar.className = 'progress-bar progress-bar-striped progress-bar-animated bg-danger';
+            break;
+        case 'warning':
+            statusMessage.className = 'alert alert-warning';
+            progressBar.className = 'progress-bar progress-bar-striped progress-bar-animated bg-warning';
+            break;
+        default:
+            statusMessage.className = 'alert alert-success';
+            progressBar.className = 'progress-bar progress-bar-striped progress-bar-animated bg-success';
+    }
+    
+    // Update stats
+    document.getElementById('kettlePower').textContent = data.kettle_power_mw.toFixed(2) + ' MW';
+    document.getElementById('remainingCapacity').textContent = data.remaining_capacity.toFixed(2) + ' MW';
+    document.getElementById('capacityUsed').textContent = data.blackout_percentage.toFixed(1) + '%';
+    document.getElementById('gridStatus').textContent = data.status.charAt(0).toUpperCase() + data.status.slice(1);
+    
+    // Add some fun effects for blackout
+    if (data.status === 'blackout') {
+        document.body.style.backgroundColor = '#000';
+        document.body.style.color = '#fff';
+        setTimeout(() => {
+            document.body.style.backgroundColor = '';
+            document.body.style.color = '';
+        }, 500);
+    }
+}
+
+function shareResults() {
+    const message = `I used ${currentKettles.toLocaleString()} kettles on Scotland's grid! Can you cause a blackout? 🏴󠁧󠁢󠁳󠁣󠁴󠁿⚡`;
+    if (navigator.share) {
+        navigator.share({
+            title: 'Scotland Kettle Blackout Game',
+            text: message,
+            url: window.location.href
+        });
+    } else {
+        // Fallback - copy to clipboard
+        navigator.clipboard.writeText(message + ' ' + window.location.href).then(() => {
+            alert('Results copied to clipboard! Share them on social media.');
+        }).catch(() => {
+            alert('Share this: ' + message);
+        });
+    }
+}
+
+// Initialize game when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Game page loaded');
+    updateGame();
+});
+</script>
+{% endblock %}

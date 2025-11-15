@@ -1,0 +1,38 @@
+/* Game-specific styles */
+.progress-bar-animated {
+    animation: progress-bar-stripes 1s linear infinite;
+}
+
+@keyframes progress-bar-stripes {
+    0% { background-position: 1rem 0; }
+    100% { background-position: 0 0; }
+}
+
+.btn-group-lg > .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    margin: 0.25rem;
+}
+
+/* Blackout animation */
+@keyframes blackout {
+    0% { background-color: #000; }
+    50% { background-color: #333; }
+    100% { background-color: #000; }
+}
+
+.blackout-mode {
+    animation: blackout 0.5s ease-in-out;
+}
+
+/* Responsive game controls */
+@media (max-width: 768px) {
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .btn-group > .btn {
+        margin: 0.1rem;
+    }
+}
