@@ -1,0 +1,1379 @@
+{
+  "@context": {
+    "adms": "http://www.w3.org/ns/adms#",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatap": "http://data.europa.eu/r5r/",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dct": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "gsp": "http://www.opengis.net/ont/geosparql#",
+    "ib1": "http://registry.ib1.org/ns/1.0/#",
+    "locn": "http://www.w3.org/ns/locn#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "schema1": "http://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "time1": "http://www.w3.org/2006/time",
+    "vann": "http://purl.org/vocab/vann/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/942487ff-6c29-4c0d-b88b-0cefaa7a2412",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/942487ff-6c29-4c0d-b88b-0cefaa7a2412/download/embedded-capacity-register-4.0_november_2025.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1403668.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 1.403668,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-11-14T11:03:37.621417"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-11-14T11:03:46.430321"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 November 2025",
+      "spdx:checksum": {
+        "@id": "_:Ndb689c8ab4054364b949e0bd3ed549b0"
+      }
+    },
+    {
+      "@id": "_:Ndb689c8ab4054364b949e0bd3ed549b0",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "f6168ab12b580a6b4af040a3fbb36cf8"
+      }
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/507bf8f0-f5f3-4cb8-b4e3-944907343be1",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/507bf8f0-f5f3-4cb8-b4e3-944907343be1/download/embedded-capacity-register-4.0_march_2025.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1038207.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 1.038207,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-03-14T16:59:59.165328"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.935554"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 March 2025"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/29d7267c-7827-437e-9c16-f5b04c20c65d",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/29d7267c-7827-437e-9c16-f5b04c20c65d/download/embedded-capacity-register-4.0_february_2024.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3936574.0"
+      },
+      "dct:SizeOrDuration": 3.936574,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid. \r\n",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-02-13T15:30:01.115414"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.937168"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 February 2024"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/7c3c4d3c-87d2-4f83-821d-5d58f4e451c8",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/7c3c4d3c-87d2-4f83-821d-5d58f4e451c8/download/embedded-capacity-register-4.0_september_2023.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3918822.0"
+      },
+      "dct:SizeOrDuration": 3.918822,
+      "dct:description": "Information on generation and storage resources (≥50KW) that are connected, or accepted to connect, to the electricity distribution networks owned and operated by us and it will be updated on a monthly basis.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-10-09T14:42:26.780410"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.937889"
+      },
+      "dct:title": "SSEN Embedded Capacity Register v4.0, September 2023"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/80816fcd-609c-41c5-ba36-e8da3be0a1c0",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://ssen.tractivity.co.uk/images/blob/b5547b09-3bcf-4221-88cd-7efa01b895b7/DSO%20in%20Action%20Spring%20Series%20Enhanced%20Data%20Surgery%20270325%20Slides.pdf"
+      },
+      "dct:description": "The data sharing team have facilitated a data surgery with the Embedded Capacity Register (ECR) that is available on SSEN Distributions Data Portal. Please see the slides that we used through this session. ",
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-04T09:17:04.556717"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-14T08:19:24.557514"
+      },
+      "dct:title": "ECR Data Surgery Slides"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/d421d6cc-6d61-45eb-b70c-0f4c0484e8b2",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/d421d6cc-6d61-45eb-b70c-0f4c0484e8b2/download/embedded-capacity-register-4.0_november_2025.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1403668.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 1.403668,
+      "dct:description": "The Latest Version of the SSEN Embedded Capacity Register v4.0\r\n\r\nInformation on generation and storage resources (≥50KW) that are connected, or accepted to connect, to the electricity distribution networks owned and operated by us and it will be updated on a monthly basis.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-06-13T15:03:02.739924"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-11-14T11:04:13.329282"
+      },
+      "dct:title": "SSEN Embedded Capacity Register v4.0, Latest",
+      "spdx:checksum": {
+        "@id": "_:N07272849bad64d2385ba2c29f47754d1"
+      }
+    },
+    {
+      "@id": "_:N07272849bad64d2385ba2c29f47754d1",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "f6168ab12b580a6b4af040a3fbb36cf8"
+      }
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/d7b5bb75-1f0f-4f0c-891e-e765a924f18d",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://www.arcgis.com/apps/dashboards/ac2c565541124e14a43efd7e532f6578"
+      },
+      "dct:description": "The Embedded Capacity Register (ECR) interactive map provides user defined map views, filtering and aggregated totals to provide greater insights into generation and storage connected to, or accepted to connect to SSEN's electricity networks",
+      "dct:format": "Map",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-03-17T15:03:20.546309"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.934644"
+      },
+      "dct:title": "SSEN Embedded Capacity Register GIS Dashboard"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/6c9f422b-bb5f-4888-93a1-2c87d968ec51",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/6c9f422b-bb5f-4888-93a1-2c87d968ec51/download/embedded-capacity-register-4.0_september_2024.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3984996.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 3.984996,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-09-13T13:28:19.688660"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.936540"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 September 2024"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/d39d95e5-6a5b-4d65-96e6-0a1b8f26da56",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://vimeo.com/1070055041/07e07dd63e"
+      },
+      "dct:description": "The data sharing team have facilitated a data surgery with the Embedded Capacity Register (ECR) that is available on SSEN Distributions Data Portal. This session was recorded to ensure that all of our users have an opportunity to engage with our data surgery. This session had a focus on bringing awareness to the ECR and performing a deep dive into this data with clarity on future enhancements.",
+      "dct:format": "URL",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-04T09:13:50.499627"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-30T08:31:45.449816"
+      },
+      "dct:title": "ECR Data Surgery"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/2d48a2f1-a80f-4a6e-9a97-13557066f8ea",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/2d48a2f1-a80f-4a6e-9a97-13557066f8ea/download/embedded-capacity-register-4.0_december_2024.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1033021.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 1.033021,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-12-13T14:00:53.099638"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.935991"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 December 2024"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/6a45e2a3-411d-489a-87ee-7b9bcf156d76",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://www.dcusa.co.uk/embedded-capacity-register/"
+      },
+      "dct:description": "This is an overview of what the embedded capacity register is from the Distribution Connection and Use of System Agreement (DCUSA). ",
+      "dct:format": "URL",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-03-12T16:34:58.450436"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-04T09:13:50.468837"
+      },
+      "dct:title": "Relevant Third Party Resource - Embedded Capacity Register Overview"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/fca1f220-9f8c-4b63-8c99-bb991fdf4a03",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/fca1f220-9f8c-4b63-8c99-bb991fdf4a03/download/embedded-capacity-register-4.0_january_2025.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1042442.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 1.042442,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-01-15T15:45:46.712350"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.935842"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 January 2025"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/d00f69bf-5300-46cf-a607-abf2cc879061",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/d00f69bf-5300-46cf-a607-abf2cc879061/download/methodology-statement-embedded-capacity-register.pdf"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "50454.0"
+      },
+      "dcat:mediaType": "application/pdf",
+      "dct:SizeOrDuration": 0.050454,
+      "dct:description": "A brief outline of the methodology used to develop the Embedded Capacity Register dataset. ",
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-03-25T08:52:59.768794"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.938660"
+      },
+      "dct:title": "Methodology Statement - Embedded Capacity Register"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/302b7235-88f1-4aab-802e-4399f1ef2334",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/302b7235-88f1-4aab-802e-4399f1ef2334/download/embedded-capacity-register-4.0_january_2024.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3950281.0"
+      },
+      "dct:SizeOrDuration": 3.950281,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid. \r\n",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-01-15T10:08:40.297334"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.937362"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 January 2024"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/93232168-eba7-4c1f-b923-2a97a199b121",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/93232168-eba7-4c1f-b923-2a97a199b121/download/external-data-triage-ecr-artefact.pdf"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "283431.0"
+      },
+      "dcat:mediaType": "application/pdf",
+      "dct:SizeOrDuration": 0.283431,
+      "dct:description": "SSEN Data Triage record for Embedded Capacity Register",
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-09-25T17:20:05.313532"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.938180"
+      },
+      "dct:title": "SSEN Data Triage record for Embedded Capacity Register"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/1a797084-7105-4c3b-a29e-17bc86b1c692",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/1a797084-7105-4c3b-a29e-17bc86b1c692/download/embedded-capacity-register-4.0_august_2024.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3981881.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 3.981881,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-09T15:11:56.365022"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.936644"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 August 2024"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/4fe6f437-78e2-4bfb-8fa3-450ffeaf4991",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/4fe6f437-78e2-4bfb-8fa3-450ffeaf4991/download/embedded-capacity-register-4.0_december_2023.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3928415.0"
+      },
+      "dct:SizeOrDuration": 3.928415,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid. \r\n\r\nOur register provides information on generation and storage resources (>=50kW) that are connected, or accepted to connect, to the electricity distribution networks owned and operated by us and it will be updated on a monthly basis. The register also includes information on the flexibility services that are being provided by connected resources, assisting to control or schedule demand and/or generation to reduce network constraints.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-19T14:39:08.299038"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.937507"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 December 2023"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/dfb93b17-eb16-4e74-9f95-47200493ca29",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/dfb93b17-eb16-4e74-9f95-47200493ca29/download/embedded-capacity-register-4.0_october_2023.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3924452.0"
+      },
+      "dct:SizeOrDuration": 3.924452,
+      "dct:description": "Information on generation and storage resources (≥50KW) that are connected, or accepted to connect, to the electricity distribution networks owned and operated by us and it will be updated on a monthly basis.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-11-03T08:59:50.259704"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.937749"
+      },
+      "dct:title": "SSEN Embedded Capacity Register v4.0, October 2023"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/8ad71dc6-b803-4517-8164-67b0391fd0dd",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/8ad71dc6-b803-4517-8164-67b0391fd0dd/download/embedded-capacity-register-4.0_march_2024.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3943233.0"
+      },
+      "dct:SizeOrDuration": 3.943233,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid. \r\n",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-03-13T13:51:13.887551"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.937021"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 March 2024"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/1ce63daa-11bf-48e4-84c7-1dce6c151111",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/1ce63daa-11bf-48e4-84c7-1dce6c151111/download/embedded-capacity-register-4.0_november_2023.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3879423.0"
+      },
+      "dct:SizeOrDuration": 3.879423,
+      "dct:description": "Information on generation and storage resources (≥50KW) that are connected, or accepted to connect, to the electricity distribution networks owned and operated by us and it will be updated on a monthly basis.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-11-16T09:22:01.498237"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.937628"
+      },
+      "dct:title": "SSEN Embedded Capacity Register v4.0, November 2023"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/28eda2a1-c96b-43ef-81da-922c00d12aad",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/28eda2a1-c96b-43ef-81da-922c00d12aad/download/embedded-capacity-register-4.0_june_2025.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1018528.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 1.018528,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-06-13T14:51:00.366652"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-06-13T14:51:03.027215"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 June 2025",
+      "spdx:checksum": {
+        "@id": "_:Ndc121a00be7048d2a1cc34dd616e5960"
+      }
+    },
+    {
+      "@id": "_:Ndc121a00be7048d2a1cc34dd616e5960",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "509fde6e4ad2d69ebe8f159b812b23ae"
+      }
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/4ab9168f-e456-4ab4-8a64-3612eac83206",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/4ab9168f-e456-4ab4-8a64-3612eac83206/download/embedded-capacity-register-4.0_may_2025.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1008380.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 1.00838,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-05-12T14:58:59.884301"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-05-12T14:59:03.239926"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 May 2025",
+      "spdx:checksum": {
+        "@id": "_:N25777e66e47a4fe9ad74874e2624b2b9"
+      }
+    },
+    {
+      "@id": "_:N25777e66e47a4fe9ad74874e2624b2b9",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "be381ca66e8270527035fac5133bad60"
+      }
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/4ccd2461-7161-4a67-a973-202086a807a4",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/4ccd2461-7161-4a67-a973-202086a807a4/download/embedded-capacity-register-4.0_august_2025.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1372345.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 1.372345,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-08-06T07:53:37.184720"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-08-06T07:53:44.937011"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 August 2025",
+      "spdx:checksum": {
+        "@id": "_:Ncca0d9d8b6de4ec79cf92fe1b8295f41"
+      }
+    },
+    {
+      "@id": "_:Ncca0d9d8b6de4ec79cf92fe1b8295f41",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "128ba8ed77e384a3355608c561ea5899"
+      }
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab",
+      "@type": "dcat:Dataset",
+      "dcat:contactPoint": [
+        {
+          "@id": "_:N9ca4930d0793456f88af0207740f3e80"
+        },
+        "data@ssen.co.uk"
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/16bc7142-6f53-4b5e-8c2c-2a1168519ffe"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/2d48a2f1-a80f-4a6e-9a97-13557066f8ea"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/d7b5bb75-1f0f-4f0c-891e-e765a924f18d"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/d85cdd63-668d-415c-9a02-b51f4f43a800"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/d39d95e5-6a5b-4d65-96e6-0a1b8f26da56"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/bbae6797-364a-4b2d-a01a-8395e21bee76"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/d421d6cc-6d61-45eb-b70c-0f4c0484e8b2"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/ee8e6e1d-4865-4192-a898-a223b8a454c3"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/5e63eb14-cb3b-4be2-9220-e446bae97df4"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/1a797084-7105-4c3b-a29e-17bc86b1c692"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/ecd61f1e-afea-4eb9-92e0-41228b59fbe1"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/7c3c4d3c-87d2-4f83-821d-5d58f4e451c8"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/507bf8f0-f5f3-4cb8-b4e3-944907343be1"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/c96b0ef8-0f8a-4e2a-a112-6174f982dae4"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/fca1f220-9f8c-4b63-8c99-bb991fdf4a03"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/4ab9168f-e456-4ab4-8a64-3612eac83206"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/942487ff-6c29-4c0d-b88b-0cefaa7a2412"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/4ccd2461-7161-4a67-a973-202086a807a4"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/8ad71dc6-b803-4517-8164-67b0391fd0dd"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/33673137-b9b5-473a-a064-0b5dc2e20f75"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/d00f69bf-5300-46cf-a607-abf2cc879061"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/6c9f422b-bb5f-4888-93a1-2c87d968ec51"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/d258bd7b-22db-4d32-9450-b3783591b66d"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/fd9c1525-6b9f-4177-93dc-da69fc1b6f7c"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/6a45e2a3-411d-489a-87ee-7b9bcf156d76"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/c6497c5c-5664-4b9b-ba9e-f5f84398aa11"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/93232168-eba7-4c1f-b923-2a97a199b121"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/c1b20cd2-1975-4d85-98ec-9948ad35fb60"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/80816fcd-609c-41c5-ba36-e8da3be0a1c0"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/f3804824-7aae-4244-a7ad-ce3ccefe9cdc"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/1ce63daa-11bf-48e4-84c7-1dce6c151111"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/4fe6f437-78e2-4bfb-8fa3-450ffeaf4991"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/29d7267c-7827-437e-9c16-f5b04c20c65d"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/dfb93b17-eb16-4e74-9f95-47200493ca29"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/e3c901b2-34ad-4161-b0f7-6af40443e800"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/1d3ce9bf-224d-440d-8d5f-f84de84941be"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/302b7235-88f1-4aab-802e-4399f1ef2334"
+        },
+        {
+          "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/28eda2a1-c96b-43ef-81da-922c00d12aad"
+        }
+      ],
+      "dcat:keyword": [
+        "Energy Data",
+        "Generation",
+        "Capacity"
+      ],
+      "dcat:landingPage": {
+        "@id": "https://data.ssen.co.uk/@ssen-distribution/embedded_capacity_register"
+      },
+      "dct:accessRights": "Creative Commons Attribution 4.0",
+      "dct:accrualPeriodicity": "monthly",
+      "dct:coverage": "[{\"location_name\": \"SEPD and SHEPD\", \"name\": \"SEPD and SHEPD Licence Areas\", \"type\": \"spatial\"}]",
+      "dct:creator": "SSEN Distribution",
+      "dct:date": "2024-01-12",
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid. \r\n\r\nOur register provides information on generation and storage resources (>=50kW) that are connected, or accepted to connect, to the electricity distribution networks owned and operated by us and it will be updated on a monthly basis. The register also includes information on the flexibility services that are being provided by connected resources, assisting to control or schedule demand and/or generation to reduce network constraints.",
+      "dct:format": [
+        "Map",
+        "CSV",
+        "XLSX",
+        "URL"
+      ],
+      "dct:identifier": {
+        "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab"
+      },
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-09-18T15:50:13.560514"
+      },
+      "dct:language": "EN",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-11-14T11:06:11.332791"
+      },
+      "dct:publisher": [
+        "SSEN Distribution",
+        {
+          "@id": "https://data.ssen.co.uk/organization/6c20e020-2612-4132-818c-aaa1f28329c5"
+        }
+      ],
+      "dct:subject": [
+        "Energy Data",
+        "Generation",
+        "Capacity"
+      ],
+      "dct:temporal": "2024-01-12",
+      "dct:title": "Embedded Capacity Register",
+      "dct:type": "Network Capacity",
+      "ib1:datasetAssurance": "IcebreakerOne.DatasetLevel1",
+      "ib1:sensitivityClass": "IB1-O",
+      "ib1:trustFramework": "http://open-energy.registry.ib1.org",
+      "owl:versionInfo": "1"
+    },
+    {
+      "@id": "_:N9ca4930d0793456f88af0207740f3e80",
+      "@type": "vcard:Organization",
+      "vcard:fn": "SSEN Distribution",
+      "vcard:hasEmail": {
+        "@id": "mailto:data@ssen.co.uk"
+      }
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/c96b0ef8-0f8a-4e2a-a112-6174f982dae4",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/c96b0ef8-0f8a-4e2a-a112-6174f982dae4/download/embedded-capacity-register-4.0_may_2024.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3951663.0"
+      },
+      "dct:SizeOrDuration": 3.951663,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid. \r\n",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-05-15T09:32:39.418745"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.936876"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 May 2024"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/fd9c1525-6b9f-4177-93dc-da69fc1b6f7c",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/fd9c1525-6b9f-4177-93dc-da69fc1b6f7c/download/embedded-capacity-register-4.0_feb_2025.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1042435.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 1.042435,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-02-14T11:00:07.531504"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.935701"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 February 2025"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/d258bd7b-22db-4d32-9450-b3783591b66d",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/d258bd7b-22db-4d32-9450-b3783591b66d/download/ssen_ecr_part_1_50kw_november_2025_csv.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1489059.0"
+      },
+      "dcat:mediaType": "text/csv",
+      "dct:SizeOrDuration": 1.489059,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-07-11T10:21:55.218788"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-11-14T11:05:32.892866"
+      },
+      "dct:title": "SSEN ECR Part 1 - 50kW November 2025 CSV",
+      "spdx:checksum": {
+        "@id": "_:N2c96c900536048159bdf76e40514e34d"
+      }
+    },
+    {
+      "@id": "_:N2c96c900536048159bdf76e40514e34d",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "723ffbf6cfbcdf0ab02cb70ff334b7b2"
+      }
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/f3804824-7aae-4244-a7ad-ce3ccefe9cdc",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/f3804824-7aae-4244-a7ad-ce3ccefe9cdc/download/embedded-capacity-register-4.0_june_2024.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3967334.0"
+      },
+      "dct:SizeOrDuration": 3.967334,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid. \r\n",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-06-14T09:42:28.638011"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.936802"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 June 2024"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/ee8e6e1d-4865-4192-a898-a223b8a454c3",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/ee8e6e1d-4865-4192-a898-a223b8a454c3/download/embedded-capacity-register-4.0_november_2024.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1037510.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 1.03751,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-11-14T09:48:52.570625"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.936135"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 November 2024"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/e3c901b2-34ad-4161-b0f7-6af40443e800",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/e3c901b2-34ad-4161-b0f7-6af40443e800/download/embedded-capacity-register-4.0_august_2023.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3709057.0"
+      },
+      "dct:SizeOrDuration": 3.709057,
+      "dct:description": "Information on generation and storage resources (≥50KW) that are connected, or accepted to connect, to the electricity distribution networks owned and operated by us and it will be updated on a monthly basis.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-09-20T13:09:38.450850"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.938035"
+      },
+      "dct:title": "SSEN Embedded Capacity Register v4.0, August 2023"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/organization/6c20e020-2612-4132-818c-aaa1f28329c5",
+      "@type": "foaf:Organization",
+      "foaf:name": "SSEN Distribution"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/16bc7142-6f53-4b5e-8c2c-2a1168519ffe",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/16bc7142-6f53-4b5e-8c2c-2a1168519ffe/download/embedded-capacity-register-attributes.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "13712.0"
+      },
+      "dct:SizeOrDuration": 0.013712,
+      "dct:description": "Register Definitions and explanations within the Embedded Capacity Register.\r\nFor each site that meets the criteria to be included in its Embedded Capacity Register, each DNO/IDNO Party shall use reasonable endeavours to populate all relevant fields in the Embedded Capacity Register. Where the DNO/IDNO Party does not hold data for a specific field for a specific site, then the DNO/IDNO Party will populate the relevant field with the words ‘data not available’. If a specific field is not applicable to a specific site, then the DNO/IDNO Party will populate the relevant field with the words ‘data not applicable’.",
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-09-28T14:35:49.316222"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.938361"
+      },
+      "dct:title": "Embedded Capacity Register Attributes and Definitions"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/1d3ce9bf-224d-440d-8d5f-f84de84941be",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/1d3ce9bf-224d-440d-8d5f-f84de84941be/download/embedded-capacity-register-4.0_october_2024.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1036596.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 1.036596,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-10-14T12:36:34.248875"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.936364"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 October 2024"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/bbae6797-364a-4b2d-a01a-8395e21bee76",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/bbae6797-364a-4b2d-a01a-8395e21bee76/download/ssen_ecr_part_1_1mw_november_2025_csv.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1386245.0"
+      },
+      "dcat:mediaType": "text/csv",
+      "dct:SizeOrDuration": 1.386245,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-07-11T10:20:12.481865"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-11-14T11:04:53.419368"
+      },
+      "dct:title": "SSEN ECR Part 1 - 1MW November 2025 CSV",
+      "spdx:checksum": {
+        "@id": "_:Ndbec03102cc44c4599ab7dc8b2d241de"
+      }
+    },
+    {
+      "@id": "_:Ndbec03102cc44c4599ab7dc8b2d241de",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "19d878ef5075cc3c0aef5c96d0bd02c4"
+      }
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/d85cdd63-668d-415c-9a02-b51f4f43a800",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/d85cdd63-668d-415c-9a02-b51f4f43a800/download/embedded-capacity-register-4.0_september_2025.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1364584.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 1.364584,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-12T14:37:24.424387"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-17T13:10:32.692333"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 September 2025",
+      "spdx:checksum": {
+        "@id": "_:N5daad85658c24ed280d7f7840261ce94"
+      }
+    },
+    {
+      "@id": "_:N5daad85658c24ed280d7f7840261ce94",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "dd85ff9cef9ec8826a7a8064f5d559a2"
+      }
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/ecd61f1e-afea-4eb9-92e0-41228b59fbe1",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/ecd61f1e-afea-4eb9-92e0-41228b59fbe1/download/embedded-capacity-register-4.0_july_2025.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1016771.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 1.016771,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-07-11T10:05:57.950679"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-07-11T10:06:01.138866"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 July 2025",
+      "spdx:checksum": {
+        "@id": "_:Nebc4b39012654c768edf56dec8506599"
+      }
+    },
+    {
+      "@id": "_:Nebc4b39012654c768edf56dec8506599",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "05f611419e7f5c4913aa0e02a06cc3fd"
+      }
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/c6497c5c-5664-4b9b-ba9e-f5f84398aa11",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/c6497c5c-5664-4b9b-ba9e-f5f84398aa11/download/embedded-capacity-register-4.0_july_2024.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3969329.0"
+      },
+      "dct:SizeOrDuration": 3.969329,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-07-12T09:14:33.328307"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.936725"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 July 2024"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/c1b20cd2-1975-4d85-98ec-9948ad35fb60",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/c1b20cd2-1975-4d85-98ec-9948ad35fb60/download/embedded-capacity-register-4.0_april_2025.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1039640.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 1.03964,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-14T08:19:24.586142"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-30T08:32:16.822024"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 April 2025",
+      "spdx:checksum": {
+        "@id": "_:Nc6a08699d0b1441ab9b3df0d49fbe9c0"
+      }
+    },
+    {
+      "@id": "_:Nc6a08699d0b1441ab9b3df0d49fbe9c0",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "737b3898633d8e506a14ad032553cc95"
+      }
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/5e63eb14-cb3b-4be2-9220-e446bae97df4",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/5e63eb14-cb3b-4be2-9220-e446bae97df4/download/embedded-capacity-register-4.0_april_2024.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3945571.0"
+      },
+      "dct:SizeOrDuration": 3.945571,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid. \r\n",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-04-12T08:56:05.016077"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-04-03T10:43:11.936948"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 April 2024"
+    },
+    {
+      "@id": "https://data.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/33673137-b9b5-473a-a064-0b5dc2e20f75",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data-api.ssen.co.uk/dataset/655eb750-7b3f-4c55-93b6-9bc4c26a57ab/resource/33673137-b9b5-473a-a064-0b5dc2e20f75/download/embedded-capacity-register-4.0_october_2025.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1376326.0"
+      },
+      "dcat:mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dct:SizeOrDuration": 1.376326,
+      "dct:description": "The Embedded Capacity Register (ECR) has been developed to provide better information to electricity network stakeholders on connected resources and network requirements. Each Distribution Network Operator (DNO) will host a register which will provide accessible information at a local and national level. The register uses a format agreed through the Energy Networks Association's Open Networks project, an industry initiative aimed at transforming the operation of energy networks and delivering a smart grid.",
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-15T14:19:46.869146"
+      },
+      "dct:language": "EN",
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-17T15:42:58.357594"
+      },
+      "dct:title": "Embedded Capacity Register 4.0 October 2025",
+      "spdx:checksum": {
+        "@id": "_:Nab5262f11e4b4e33ba4f1e8683a96be4"
+      }
+    },
+    {
+      "@id": "_:Nab5262f11e4b4e33ba4f1e8683a96be4",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "bf2581abc41f6222c7fe46a46e549f1e"
+      }
+    }
+  ]
+}

@@ -86,13 +86,34 @@ def get_scotland_capacity_data():
         else:
             print(f"\n--- Found {len(scotland_data)} entries for Scotland (SHEPD) ---")
             
-            # Display the first 10 rows
-            print(scotland_data.head(10))
+            # --- New: Calculate the sum for requested columns ---
+            columns_to_sum = [
+                'Accepted Registered Capacity', 
+                'Connected Registered Capacity'
+            ]
             
-            # Optionally, save the filtered data to a new CSV
+            for col in columns_to_sum:
+                if col not in scotland_data.columns:
+                    print(f"Warning: Column '{col}' not found. Skipping.")
+                    continue
+                
+                # Convert column to numeric. 
+                # The data might contain commas, so we remove them.
+                # errors='coerce' will turn unparseable values into NaN (Not a Number)
+                scotland_data[col] = pd.to_numeric(
+                    scotland_data[col].astype(str).str.replace(',', ''), 
+                    errors='coerce'
+                )
+                
+                # Calculate the sum, ignoring NaN values
+                total_sum = scotland_data[col].sum()
+                
+                print(f"\nTotal for '{col}': {total_sum:,.2f}")
+
+            # Optionally, save the original filtered data to a new CSV
             output_filename = "scotland_embedded_capacity.csv"
             scotland_data.to_csv(output_filename, index=False)
-            print(f"\nFiltered data for Scotland saved to '{output_filename}'")
+            print(f"\nFull filtered data for Scotland saved to '{output_filename}'")
 
     except pd.errors.ParserError as e:
         print(f"Error parsing CSV data: {e}")
